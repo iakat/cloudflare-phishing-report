@@ -20,7 +20,7 @@ def report():
         return ':('
     R = Report(request.form['url'], C['submitter'], request.form['justification'])
     r = R.report()
-
+    print('steamphishingreporting', request.form['url'])
     print(r)
     print(r.text)
 
