@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request
+from flask import Flask, request, jsonify
 from cloudflare import Report
 
 app = Flask(__name__)
@@ -24,7 +24,7 @@ def report():
     print(r)
     print(r.text)
 
-    return r.text
+    return jsonify(r.json())
 
 
 
