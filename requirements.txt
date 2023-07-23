@@ -4,14 +4,27 @@
 #
 #    pip-compile
 #
-certifi==2019.11.28       # via requests
-chardet==3.0.4            # via requests
-click==7.0                # via flask
+certifi==2019.11.28
+    # via requests
+chardet==3.0.4
+    # via requests
+click==7.0
+    # via flask
 flask==1.1.1
-idna==2.8                 # via requests
-itsdangerous==1.1.0       # via flask
-jinja2==2.10.3            # via flask
-markupsafe==1.1.1         # via jinja2
+    # via -r requirements.in
+idna==2.8
+    # via requests
+itsdangerous==1.1.0
+    # via flask
+jinja2==2.10.3
+    # via flask
+markupsafe==2.1.3
+    # via
+    #   jinja2
+    #   werkzeug
 requests==2.22.0
-urllib3==1.25.8           # via requests
-werkzeug==0.16.0          # via flask
+    # via -r requirements.in
+urllib3==1.25.8
+    # via requests
+werkzeug==2.2.3
+    # via flask
